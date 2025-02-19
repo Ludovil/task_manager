@@ -1,0 +1,6 @@
+<h1><%= @task.title %></h1>
+<p><%= @task.description %></p>
+<p>À faire avant le <%= @task.due_date %></p>
+<p>Statut : <%= @task.completed ? "Terminée" : "En cours" %></p>
+
+<%= link_to "Retour à la liste", tasks_path %>
